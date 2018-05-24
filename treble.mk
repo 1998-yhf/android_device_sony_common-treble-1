@@ -74,11 +74,20 @@ PRODUCT_COPY_FILES += \
 TARGET_SUPPORTS_32_BIT_APPS := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 
+
+######################################
+# VNDK
+BOARD_VNDK_VERSION := current
+
+PRODUCT_SHIPPING_API_LEVEL := 25
+PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
+
 ### DEPENDENCIES
 PRODUCT_PACKAGES += \
     libaudioroute \
     libaudioutils \
     libavservices_minijail \
+    libicuuc.vendor \
     libminijail
 
 PRODUCT_PACKAGES += \

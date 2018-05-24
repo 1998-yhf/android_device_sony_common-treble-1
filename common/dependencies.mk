@@ -98,10 +98,6 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
-### VNDK
-PRODUCT_PACKAGES += \
-    vndk-sp
-
 ### IPV6
 PRODUCT_PACKAGES += \
     ebtables \
